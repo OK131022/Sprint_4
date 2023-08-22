@@ -44,12 +44,12 @@ import static org.junit.Assert.assertTrue;
         // проверка, что отображается всплывающее окно "Заказ оформлен"
 
         @Test
-        public void checkOrderForm_buttonAtTheTop() {
+        public void checkOrderFormTopButton() {
             MainPage mainPage = new MainPage(driver);
             OrderPage orderPage = new OrderPage(driver);
             mainPage.openPage();
             mainPage.clickCookies();
-            mainPage.clickOrderButton();
+            mainPage.clickOrderButtonTop();
             orderPage.personalData(CLIENT_NAME, CLIENT_SURNAME, CLIENT_ADDRESS, CLIENT_PHONE);
             orderPage.clickNextButton();
             orderPage.aboutRent();
@@ -68,12 +68,12 @@ import static org.junit.Assert.assertTrue;
         // вызов метода, который нажимает на кнопку "Да" во всплывающем окне "Хотите оформить заказ?"
         // проверка, что отображается всплывающее окно "Заказ оформлен"
         @Test
-        public void checkOrderForm_buttonAtTheBottom() {
+        public void checkOrderFormBottomButton() {
             MainPage mainPage = new MainPage(driver);
             OrderPage orderPage = new OrderPage(driver);
             mainPage.openPage();
             mainPage.clickCookies();
-            mainPage.clickOrderButton2();
+            mainPage.clickOrderButtonDown();
             orderPage.personalData(CLIENT_NAME, CLIENT_SURNAME, CLIENT_ADDRESS, CLIENT_PHONE);
             orderPage.clickNextButton();
             orderPage.aboutRent();

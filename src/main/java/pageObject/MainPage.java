@@ -78,12 +78,12 @@ public class MainPage {
     }
 
     // Кликнуть на кнопку "Заказать наверху"
-    public void clickOrderButton() {
+    public void clickOrderButtonTop() {
         driver.findElement(ORDER1).click();
     }
 
     // Кликнуть на кнопку "Заказать внизу"
-    public void clickOrderButton2() {
+    public void clickOrderButtonDown() {
         driver.findElement(ORDER2).click();
     }
 
